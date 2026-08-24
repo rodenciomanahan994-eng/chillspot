@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ChillSpot - Your ultimate ice cream and pizza adventure.">
+  <title>ChillSpot | Ice Cream & Pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu">MENU</a>
+      <a href="#locations">LOCATIONS</a>
+      <a href="#reviews">REVIEWS</a>
+      <a href="#menu" class="nav-order">ORDER ONLINE</a>
+      <a href="#menu" class="nav-order">ORDER ONLINE</a>
+    </nav>
+
+    <a class="brand-mark" href="#home" aria-label="ChillSpot home">
+      <span class="brand-icon">🍕</span>
+      <span>CHILL<br>SPOT</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <button class="cart-button" id="cartButton">🛒 <span>ORDER</span> <b id="cartCount">0</b></button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO: inspired by the supplied ChillSpot reference -->
+  <section class="hero">
+    <div class="hero-photo">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-kicker">WELCOME TO CHILLSPOT</p>
+        <h1><span>CHILLSPOT:</span> YOUR ULTIMATE<br>ICE CREAM &amp; PIZZA ADVENTURE</h1>
+        <p class="hero-subtitle">Good food, cold treats, and good vibes. Order your favorites online today!</p>
+        <div class="hero-actions">
+          <a class="hero-btn" href="#menu">ORDER OUR COMBOS</a>
+          <button class="hero-btn secondary" id="heroOrderButton">ORDER ONLINE</button>
+        </div>
+      </div>
+
+      <div class="hero-food-showcase">
+        <div class="showcase-pizza">🍕</div>
+        <div class="showcase-icecream">🍦</div>
+        <div class="showcase-label">PIZZA + ICE CREAM<br><strong>COMBO FROM ₱349</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS + QUICK ORDER -->
+  <section class="review-order-section" id="reviews">
+    <div class="reviews-panel">
+      <h2>LATEST CUSTOMER REVIEWS</h2>
+      <div class="review-grid">
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>"The best pizza in town!"</p>
+          <span>— LML</span>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Amazing ice cream and service!"</p>
+          <span>— Bowling team</span>
+        </article>
+        <article class="review">
+          <div class="stars">★★★★★</div>
+          <p>"Perfect for a friend gathering!"</p>
+          <span>— Chill-ice crew</span>
+        </article>
+      </div>
+    </div>
+
+    <aside class="quick-order">
+      <div class="mini-logo">🍕</div>
+      <h3>ORDER NOW</h3>
+      <p>Choose your craving</p>
+      <a href="#menu" class="quick-btn">PIZZA</a>
+      <a href="#menu" class="quick-btn">ICE CREAM</a>
+      <button class="quick-cart" id="quickCart">VIEW CART <span id="quickCartCount">0</span></button>
+    </aside>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu-section" id="menu">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">CHILLSPOT MENU</p>
+        <h2>Pizza, Ice Cream &amp; More</h2>
+        <p>Pick your favorites, customize your order, then checkout.</p>
+      </div>
+      <div class="search-box">
+        <span>🔎</span>
+        <input id="menuSearch" type="search" placeholder="Search food..." autocomplete="off">
+      </div>
+    </div>
+
+    <div class="category-list">
+      <button class="category active" data-category="all">ALL</button>
+      <button class="category" data-category="pizza">PIZZA</button>
+      <button class="category" data-category="ice-cream">ICE CREAM</button>
+      <button class="category" data-category="burgers">BURGERS</button>
+      <button class="category" data-category="drinks">DRINKS</button>
+      <button class="category" data-category="sides">SIDES</button>
+      <button class="category" data-category="combo">COMBOS</button>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps-section">
+    <div class="section-heading centered">
+      <p class="eyebrow">ORDER ONLINE</p>
+      <h2>How It Works</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card"><span>01</span><h3>Choose</h3><p>Select your pizza, ice cream, drinks, or combo.</p></div>
+      <div class="step-card"><span>02</span><h3>Checkout</h3><p>Enter your details and choose pickup or delivery.</p></div>
+      <div class="step-card"><span>03</span><h3>Chill</h3><p>Wait for your order and enjoy your ChillSpot favorites.</p></div>
+    </div>
+  </section>
+
+  <!-- LOCATION / ABOUT -->
+  <section class="location-section" id="locations">
+    <div class="location-copy">
+      <p class="eyebrow">COME VISIT US</p>
+      <h2>Your Local Chill Spot</h2>
+      <p>We're building ChillSpot to be a fun place for students, friends, families, and pizza &amp; ice cream lovers.</p>
+      <div class="location-details">
+        <div><strong>📍 LOCATION</strong><span>ChillSpot, Philippines</span></div>
+        <div><strong>🕒 HOURS</strong><span>10:00 AM – 10:00 PM</span></div>
+        <div><strong>📞 CONTACT</strong><span>09XX XXX XXXX</span></div>
+      </div>
+      <button class="hero-btn" id="locationButton">VIEW LOCATION</button>
+    </div>
+    <div class="location-art">
+      <div class="art-circle">🍕</div>
+      <div class="art-circle small">🍦</div>
+      <strong>GOOD FOOD.<br>GOOD VIBES.</strong>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <div>
+      <div class="footer-logo">CHILLSPOT</div>
+      <p>Good Food. Good Vibes.</p>
+    </div>
+    <div class="footer-social">◎ &nbsp; ◉ &nbsp; ▶</div>
+    <div class="footer-handle">@chillspot.com<br>@chillvibegood</div>
+  </div>
+  <div class="copyright">© 2026 ChillSpot. All rights reserved.</div>
+</footer>
+
+<!-- CART -->
+<div class="overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="drawer-header">
+    <div><span class="eyebrow">YOUR ORDER</span><h2>Your Cart</h2></div>
+    <button class="icon-button" id="closeCart">×</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-summary">
+    <div><span>Subtotal</span><strong id="cartSubtotal">₱0.00</strong></div>
+    <div><span>Delivery</span><strong id="deliveryFee">₱0.00</strong></div>
+    <div class="total"><span>Total</span><strong id="cartTotal">₱0.00</strong></div>
+    <button class="btn btn-primary full" id="checkoutButton" disabled>PROCEED TO CHECKOUT</button>
+  </div>
+</aside>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="productModal">
+  <div class="modal-card product-modal-card">
+    <button class="modal-close" id="closeProduct">×</button>
+    <div class="modal-product-image" id="modalProductImage">🍕</div>
+    <span class="eyebrow" id="modalCategory">PIZZA</span>
+    <h2 id="modalName">Product</h2>
+    <p id="modalDescription">Description</p>
+    <strong class="modal-price" id="modalPrice">₱0.00</strong>
+    <label>Special instructions <small>(optional)</small></label>
+    <textarea id="specialInstructions" placeholder="Example: No onions, extra cheese..."></textarea>
+    <div class="quantity-row">
+      <span>QUANTITY</span>
+      <div class="quantity">
+        <button id="quantityMinus">−</button>
+        <strong id="quantityValue">1</strong>
+        <button id="quantityPlus">+</button>
+      </div>
+    </div>
+    <button class="btn btn-primary full" id="addToCartButton">ADD TO CART</button>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-card checkout-card">
+    <button class="modal-close" id="closeCheckout">×</button>
+    <span class="eyebrow">CHECKOUT</span>
+    <h2>Complete Your Order</h2>
+
+    <div class="order-type">
+      <button class="order-type-button active" data-type="pickup">🏪 PICKUP</button>
+      <button class="order-type-button" data-type="delivery">🛵 DELIVERY</button>
+    </div>
+
+    <form id="checkoutForm">
+      <div class="form-grid">
+        <label>Full Name<input id="customerName" required placeholder="Juan Dela Cruz"></label>
+        <label>Phone Number<input id="customerPhone" type="tel" required placeholder="09XX XXX XXXX"></label>
+      </div>
+
+      <div id="addressField" class="hidden-field">
+        <label>Delivery Address<input id="customerAddress" placeholder="House no., street, barangay, city"></label>
+      </div>
+
+      <label>Payment Method
+        <select id="paymentMethod">
+          <option value="Cash">Cash</option>
+          <option value="GCash">GCash</option>
+          <option value="Maya">Maya</option>
+        </select>
+      </label>
+
+      <label>Order Notes
+        <textarea id="orderNotes" placeholder="Anything we should know?"></textarea>
+      </label>
+
+      <button class="btn btn-primary full" type="submit">PLACE ORDER</button>
+    </form>
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal" id="successModal">
+  <div class="modal-card success-card">
+    <div class="success-icon">✓</div>
+    <span class="eyebrow">ORDER RECEIVED</span>
+    <h2>Thanks for ordering!</h2>
+    <p>Your ChillSpot order has been placed.</p>
+    <div class="order-number-box">ORDER #<strong id="orderNumber">000000</strong></div>
+    <button class="btn btn-primary full" id="doneButton">DONE</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  // Small bridge for the screenshot-style quick order panel.
+  const quickCart = document.getElementById("quickCart");
+  const cartBtn = document.getElementById("cartButton");
+  quickCart?.addEventListener("click", () => cartBtn?.click());
+
+  const originalRenderCart = window.renderCart;
+</script>
+</body>
+</html>
