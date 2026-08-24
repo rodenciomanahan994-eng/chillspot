@@ -4,6 +4,12 @@
    ========================================================= */
 
 const products = [
+  // FEATURED / SPECIAL MENU
+  { id:"personalize-pizza", name:"Personalize Pizza", category:"pizza", price:100, emoji:"🍕", description:"Create your own pizza with your favorite toppings and flavors." },
+  { id:"premium-ice-cream-cups", name:"Premium Ice Cream Cups", category:"ice-cream", price:70, emoji:"🍨", description:"Premium creamy ice cream served in a convenient cup." },
+  { id:"ice-cream-tub-packs", name:"Ice Cream Tub Packs", category:"ice-cream", price:220, emoji:"🍦", description:"A generous tub pack of ChillSpot ice cream, perfect for sharing." },
+  { id:"combo-meals", name:"Combo Meals (Pizza + Drink/Dessert)", category:"combo", price:150, emoji:"🍕🥤", description:"A satisfying combo meal with pizza plus a drink or dessert." },
+
   // PIZZA
   { id:"classic-cheese", name:"Classic Cheese Pizza", category:"pizza", price:249, emoji:"🍕", description:"Classic tomato sauce with lots of melted mozzarella cheese." },
   { id:"pepperoni", name:"Pepperoni Pizza", category:"pizza", price:299, emoji:"🍕", description:"Loaded with pepperoni, mozzarella cheese, and our signature sauce." },
